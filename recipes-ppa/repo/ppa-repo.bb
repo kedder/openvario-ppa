@@ -1,7 +1,10 @@
 SUMMARY = "Rebuilds the package repo"
 LICENSE = "MIT"
 
-DEPENDS = "openvario-compman"
+DEPENDS = "\
+    openvario-compman \
+    ovmenu-compman \
+"
 
 inherit nopackages
 
