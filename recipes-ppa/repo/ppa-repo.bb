@@ -19,8 +19,6 @@ python do_build_ppa() {
     from oe.rootfs import create_packages_dir
 
     create_packages_dir(d, d.getVar("DEPLOY_DIR_PPA"), d.getVar("DEPLOY_DIR_IPK"), "package_write_ipk", True)
-    indexer = OpkgIndexer(d, d.getVar("DEPLOY_DIR_PPA"))
-    indexer.write_index()
 }
 
 do_index_ppa[nostamp] = "1"
