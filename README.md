@@ -35,15 +35,24 @@ setting up the build environment.
 Edit `conf/bblayers.conf` and add a full path to directory with `openvario-ppa`
 (this repository) sources.
 
+Build can be configured using these variables in your `local.conf`:
+
+* `PPA_UPLOAD_DEST` - destination for uploading the PPA repository. In
+  `host:path` format
+
 Building the ppa is done using this command:
 
 ```
-bitbake ppa-repo -c index_ppa
+$ bitbake ppa-repo -c build_ppa
 ```
 
 The package archive will end up in `tmp/deploy/ppa` directory of the build
-workspace directory.
+workspace directory. Build system also creates a shell script to upload
+packages to the public server using rsync, which can be run from the shell:
 
+```
+$ tmp/deploy/ppa-upload.sh
+```
 
 ## Adding new software to PPA
 
