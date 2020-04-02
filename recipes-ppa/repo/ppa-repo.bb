@@ -4,6 +4,7 @@ LICENSE = "MIT"
 DEPENDS = "\
     openvario-compman \
     ovmenu-compman \
+    syncthing \
 "
 
 inherit nopackages
