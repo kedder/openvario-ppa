@@ -9,6 +9,7 @@ the official image. The layer is responsible for building `.ipk` packages and
 
 * `openvario-compman` - [Openvario Competition Manager](https://github.com/kedder/openvario-compman)
 * `ovmenu-compman` - menu entry Competition Manager for Openvario menu system
+* `syncthing` - [Syncthing](https://syncthing.net/), continuous file synchronization program
 
 ## Using the PPA
 
