@@ -3,6 +3,7 @@ LICENSE = "MIT"
 
 DEPENDS = "\
     openvario-shell \
+    openvario-shell-autostart \
     openvario-compman \
     ovmenu-compman \
     syncthing \
