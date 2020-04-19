@@ -2,6 +2,7 @@ SUMMARY = "Rebuilds the package repo"
 LICENSE = "MIT"
 
 DEPENDS = "\
+    openvario-shell \
     openvario-compman \
     ovmenu-compman \
     syncthing \
