@@ -7,6 +7,7 @@ DEPENDS = "\
     openvario-compman \
     ovmenu-compman \
     syncthing \
+    python3-pip \
 "
 
 inherit nopackages
