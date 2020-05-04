@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
 RECIPE_MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 
-SRC_URI[sha256sum] = "c193512e36cd061f9d578dfc9dee0fd4109a11e69379927311c63c668df5a75d"
+SRC_URI[sha256sum] = "7c36219a228a4eb4359dae69cfbf2d512841c78fc2d07e0f440955f405ed888a"
 
 inherit pypi setuptools3
 
