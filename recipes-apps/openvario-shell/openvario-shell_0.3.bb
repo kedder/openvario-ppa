@@ -6,7 +6,7 @@ RECIPE_MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 PR = "r1"
 
-SRC_URI[sha256sum] = "5889440a2d5b50177bd5fb1ffa4c66d42650e81209fe5089e0069c9357b6c0d6"
+SRC_URI[sha256sum] = "7fda7117034fca57d8cadf45c6ebc6b089ca2d821ad708c42e7b59ce4130a6b1"
 
 inherit pypi setuptools3
 
