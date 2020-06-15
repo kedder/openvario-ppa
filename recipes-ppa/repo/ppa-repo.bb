@@ -2,6 +2,7 @@ SUMMARY = "Rebuilds the package repo"
 LICENSE = "MIT"
 
 DEPENDS = "\
+    less \
     openvario-shell \
     openvario-shell-autostart \
     openvario-compman \
