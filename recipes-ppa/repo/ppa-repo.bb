@@ -4,6 +4,7 @@ LICENSE = "MIT"
 DEPENDS = "\
     less \
     openvario-shell \
+    openvario-shell-next \
     openvario-shell-autostart \
     openvario-compman \
     ovmenu-compman \

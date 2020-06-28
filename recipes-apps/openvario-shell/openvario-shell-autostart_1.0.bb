@@ -2,7 +2,7 @@ SUMMARY = "Autostart openvario-shell"
 LICENSE = "GPL-3.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/${LICENSE};md5=c79ff39f19dfec6d293b95dea7b07891"
 
-PR = "r3"
+PR = "r4"
 
 SRC_URI = "file://.profile"
 
@@ -23,5 +23,5 @@ do_install() {
 
 
 FILES_${PN} = "/home/root/.profile"
-RDEPENDS_${PN} = "bash openvario-shell"
+RDEPENDS_${PN} = "bash"
 RCONFLICTS_${PN}="ovmenu-ng-autostart"
