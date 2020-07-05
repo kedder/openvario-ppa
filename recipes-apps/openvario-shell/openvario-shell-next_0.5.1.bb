@@ -7,7 +7,7 @@ MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 PYPI_PACKAGE = "openvario-shell"
 PR = "r0"
 
-SRC_URI[sha256sum] = "8c5bcab5cc787abd0c9913c32dfc26cd6dac70a293519941be92451cf90bf3c9"
+SRC_URI[sha256sum] = "ed908f5b94f078581bc49c775db7cf862b156afd7f4554fa6efd15893cd01105"
 
 inherit pypi setuptools3
 
