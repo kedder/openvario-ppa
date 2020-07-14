@@ -7,6 +7,7 @@ DEPENDS = "\
     openvario-shell-next \
     openvario-shell-autostart \
     openvario-compman \
+    openvario-compman-next \
     ovmenu-compman \
     syncthing \
     python3-pip \
