@@ -6,7 +6,7 @@ RECIPE_MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 PYPI_PACKAGE = "openvario-compman"
 
-SRC_URI[sha256sum] = "2d934acb31dc5e4d8bb5cb5f3590ca3d613a9f69ffca015d10bd74a1c90dde32"
+SRC_URI[sha256sum] = "cc343edb899bd3df6eeba1e222ca234efbdc2e04f313b6fe879cd8f35c089157"
 
 inherit pypi setuptools3
 
