@@ -3,8 +3,8 @@ HOMEPAGE = "http://urwid.org/"
 LICENSE = "LGPLv2.1 & LGPL"
 LIC_FILES_CHKSUM = "file://COPYING;md5=243b725d71bb5df4a1e5920b344b86ad"
 
-SRC_URI[md5sum] = "dedcee68e4285a940778ef7f8b15ef3a"
-SRC_URI[sha256sum] = "7870866e35b00b71b0c9ccdd1281c8e7fac3806d60b9c1075c95dd5dad88d526"
+SRC_URI[md5sum] = "f7f4e6bed9ba38965dbd619520f39287"
+SRC_URI[sha256sum] = "588bee9c1cb208d0906a9f73c613d2bd32c3ed3702012f51efe318a3f2127eae"
 
 S = "${WORKDIR}/urwid-${PV}"
 
