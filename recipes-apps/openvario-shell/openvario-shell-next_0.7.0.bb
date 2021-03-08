@@ -7,7 +7,7 @@ MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 PYPI_PACKAGE = "openvario-shell"
 PR = "r1"
 
-SRC_URI[sha256sum] = "5459702a649f908fc7cba030c5596d5a3181e25abd9304d1e8eab8b8e94af021"
+SRC_URI[sha256sum] = "033e4527c9a9bc784bfa5c500f9f4439798a29b7a1373e1ba638523850bc6bd7"
 
 inherit pypi setuptools3
 
@@ -19,6 +19,7 @@ RDEPENDS_${PN} += " \
     python3-setuptools \
     python3-misc \
     python3-asyncio \
+    python3-dbus-next \
     python3-json \
     python3-pyserial \
     python3-pyserial-asyncio \
