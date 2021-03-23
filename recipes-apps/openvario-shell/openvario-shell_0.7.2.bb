@@ -5,9 +5,9 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
 RECIPE_MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 PYPI_PACKAGE = "openvario-shell"
-PR = "r1"
+PR = "r0"
 
-SRC_URI[sha256sum] = "033e4527c9a9bc784bfa5c500f9f4439798a29b7a1373e1ba638523850bc6bd7"
+SRC_URI[sha256sum] = "4a57d5ccd3fdbcf9725cdc6710550e99d1639948fe5cc1aebd95e63241d0ec05"
 
 inherit pypi setuptools3
 
