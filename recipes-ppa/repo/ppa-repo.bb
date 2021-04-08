@@ -11,6 +11,7 @@ DEPENDS = "\
     ovmenu-compman \
     syncthing \
     python3-pip \
+    xcsoar \
 "
 
 inherit nopackages
