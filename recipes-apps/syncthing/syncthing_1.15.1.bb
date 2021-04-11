@@ -33,14 +33,12 @@ do_compile() {
     cd src/${GO_IMPORT}
     GO111MODULE=on ${GO} generate ${GOBUILDFLAGS} ${GO_IMPORT}/lib/api/auto ${GO_IMPORT}/cmd/strelaypoolsrv/auto
     GO111MODULE=on ${GO} build ${GOBUILDFLAGS} ${SYNCTHING_LDFLAGS} ${GO_IMPORT}/cmd/syncthing
-    GO111MODULE=on ${GO} build ${GOBUILDFLAGS} ${SYNCTHING_LDFLAGS} ${GO_IMPORT}/cmd/stcli
     chmod u+w -R ${WORKDIR}
 }
 
 do_install() {
         install -d ${D}${bindir}
         install -m 0755 ${B}/src/${GO_IMPORT}/syncthing ${D}${bindir}/
-        install -m 0755 ${B}/src/${GO_IMPORT}/stcli ${D}${bindir}/
         install -d ${D}${systemd_unitdir}/system
         install -m 0755 ${B}/../syncthing.service ${D}${systemd_unitdir}/system
 }
