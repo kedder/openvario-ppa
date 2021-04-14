@@ -9,8 +9,8 @@ IMAGE_INSTALL += "\
     xcsoar-profiles \
     xcsoar-maps-default \
     ovmenu-ng-skripts \
-    sensord-testing\
-    variod-testing \
+    sensord \
+    variod \
     openvario-autologin \
     less \
     openvario-shell \
