@@ -37,7 +37,7 @@ python do_populate_ppa() {
 do_index_ppa[nostamp] = "1"
 do_index_ppa[depends] += "${PACKAGEINDEXDEPS}"
 python do_index_ppa() {
-    from oe.rootfs import OpkgIndexer
+    from oe.package_manager.ipk import OpkgIndexer
 
     indexer = OpkgIndexer(d, d.getVar("DEPLOY_DIR_PPA"))
     indexer.write_index()
