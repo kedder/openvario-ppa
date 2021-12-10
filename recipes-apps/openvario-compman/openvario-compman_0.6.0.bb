@@ -10,5 +10,5 @@ SRC_URI[sha256sum] = "a2ffb725d8e65b5aeb866d6ac93818b3b9c1fe5d82cfeec767217ca38e
 
 inherit pypi setuptools3
 
-RDEPENDS_${PN} += "python3-aiodns python3-requests python3-aiohttp python3-lxml python3-urwid python3-setuptools python3-typing "
+RDEPENDS_${PN} += "python3-aiodns python3-requests python3-aiohttp python3-lxml python3-urwid python3-setuptools "
 RDEPENDS_${PN} += "python3-core"

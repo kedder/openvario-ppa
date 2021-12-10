@@ -13,7 +13,6 @@ inherit pypi setuptools3
 
 RDEPENDS_${PN} += " \
     python3-core \
-    python3-typing \
     python3-typing-extensions \
     python3-urwid \
     python3-setuptools \

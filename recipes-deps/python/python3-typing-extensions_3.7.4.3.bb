@@ -11,5 +11,4 @@ S = "${WORKDIR}/typing_extensions-${PV}"
 
 inherit setuptools3
 
-RDEPENDS_${PN} += "python3-typing"
 RDEPENDS_${PN} += "python3-core"
