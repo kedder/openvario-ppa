@@ -31,7 +31,7 @@ python do_clean_prepend () {
 
 do_compile() {
     cd src/${GO_IMPORT}
-    GO111MODULE=on ${GO} generate ${GOBUILDFLAGS} ${GO_IMPORT}/lib/api/auto ${GO_IMPORT}/cmd/strelaypoolsrv/auto
+    GOARCH=${GOHOSTARCH} GOOS=${GOHOSTOS} GO111MODULE=on go generate ${GOBUILDFLAGS} ${GO_IMPORT}/lib/api/auto ${GO_IMPORT}/cmd/strelaypoolsrv/auto
     GO111MODULE=on ${GO} build ${GOBUILDFLAGS} ${SYNCTHING_LDFLAGS} ${GO_IMPORT}/cmd/syncthing
     chmod u+w -R ${WORKDIR}
 }
