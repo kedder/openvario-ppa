@@ -1,12 +1,12 @@
 DESCRIPTION = "Python HTTP for Humans."
 HOMEPAGE = "http://python-requests.org"
 LICENSE = "Apache-2.0"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=19b6be66ed463d93fa88c29f7860bcd7"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=34400b68072d710fecd0a2940a0d1658"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/python-requests:"
 
-SRC_URI[md5sum] = "b54bff26a389e5932e8b1c4983a99ce7"
-SRC_URI[sha256sum] = "b3559a131db72c33ee969480840fff4bb6dd111de7dd27c8ee1f820f4f00231b"
+SRC_URI[md5sum] = "8c745949ad3e9ae83d9927fed213db8a"
+SRC_URI[sha256sum] = "b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7"
 
 inherit pypi setuptools3
 
@@ -21,6 +21,7 @@ RDEPENDS_${PN} += " \
     ${PYTHON_PN}-urllib3 \
     ${PYTHON_PN}-chardet \
     ${PYTHON_PN}-idna \
+    ${PYTHON_PN}-charset-normalizer \
 "
 
 CVE_PRODUCT = "requests"
