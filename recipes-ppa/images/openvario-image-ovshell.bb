@@ -11,7 +11,6 @@ IMAGE_INSTALL += "\
     ovmenu-ng-skripts \
     sensord \
     variod \
-    openvario-autologin \
     less \
     openvario-shell \
     openvario-shell-autostart \
