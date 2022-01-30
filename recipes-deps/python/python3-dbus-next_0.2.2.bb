@@ -9,4 +9,4 @@ PYPI_PACKAGE = "dbus_next"
 S = "${WORKDIR}/dbus_next-${PV}"
 
 inherit  pypi setuptools3
-RDEPENDS_${PN} += "python3-codecs python3-core python3-asyncio"
+RDEPENDS:${PN} += "python3-codecs python3-core python3-asyncio"

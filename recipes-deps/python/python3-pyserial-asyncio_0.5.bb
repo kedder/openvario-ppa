@@ -9,4 +9,4 @@ SRC_URI[sha256sum] = "1641e5433a866eeaf6464b3ab88b741e7a89dd8cd0f851b3343b15f425
 S = "${WORKDIR}/pyserial-asyncio-${PV}"
 
 inherit  pypi setuptools3
-RDEPENDS_${PN} += "python3-pyserial"
+RDEPENDS:${PN} += "python3-pyserial"

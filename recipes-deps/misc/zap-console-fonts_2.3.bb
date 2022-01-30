@@ -19,4 +19,4 @@ do_install() {
         install -m 0644 ${S}/console-fonts-zap-${PV}/*.psf ${D}/usr/share/consolefonts/
 }
 
-FILES_${PN} = "/usr/share/consolefonts/"
+FILES:${PN} = "/usr/share/consolefonts/"

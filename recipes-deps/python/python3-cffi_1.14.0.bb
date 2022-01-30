@@ -22,11 +22,11 @@ inherit pypi setuptools3
 
 # WARNING: the following rdepends are from setuptools install_requires. These
 # upstream names may not correspond exactly to bitbake package names.
-RDEPENDS_${PN} += "python3-pycparser"
+RDEPENDS:${PN} += "python3-pycparser"
 
 # WARNING: the following rdepends are determined through basic analysis of the
 # python sources, and might not be 100% accurate.
-RDEPENDS_${PN} += "python3-core python3-ctypes python3-distutils python3-io python3-math python3-shell python3-threading"
+RDEPENDS:${PN} += "python3-core python3-ctypes python3-distutils python3-io python3-math python3-shell python3-threading"
 
 # WARNING: We were unable to map the following python package/module
 # dependencies to the bitbake packages which include them:

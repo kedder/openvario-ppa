@@ -8,9 +8,9 @@ SRC_URI = " \
     file://ovshell.service \
 "
 
-RCONFLICTS_${PN} = "ovmenu-ng-autostart"
+RCONFLICTS:${PN} = "ovmenu-ng-autostart"
 
-SYSTEMD_SERVICE_${PN} = "ovshell.service"
+SYSTEMD_SERVICE:${PN} = "ovshell.service"
 
 do_configure() {
     :
@@ -25,4 +25,4 @@ do_install() {
     install -m 0644 ${WORKDIR}/ovshell.service ${D}${systemd_unitdir}/system
 }
 
-RDEPENDS_${PN} = "bash ov-tools ovmenu-ng-skripts"
+RDEPENDS:${PN} = "bash ov-tools ovmenu-ng-skripts"

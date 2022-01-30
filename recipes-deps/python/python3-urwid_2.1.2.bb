@@ -9,4 +9,4 @@ SRC_URI[sha256sum] = "588bee9c1cb208d0906a9f73c613d2bd32c3ed3702012f51efe318a3f2
 S = "${WORKDIR}/urwid-${PV}"
 
 inherit  pypi setuptools3
-RDEPENDS_${PN} += "python3-codecs python3-core python3-curses python3-fcntl python3-io python3-math python3-numbers python3-shell python3-terminal"
+RDEPENDS:${PN} += "python3-codecs python3-core python3-curses python3-fcntl python3-io python3-math python3-numbers python3-shell python3-terminal"

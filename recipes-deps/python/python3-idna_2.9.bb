@@ -22,6 +22,6 @@ inherit pypi setuptools3
 
 # WARNING: the following rdepends are determined through basic analysis of the
 # python sources, and might not be 100% accurate.
-RDEPENDS_${PN} += "python3-codecs python3-compression python3-core"
+RDEPENDS:${PN} += "python3-codecs python3-compression python3-core"
 
 

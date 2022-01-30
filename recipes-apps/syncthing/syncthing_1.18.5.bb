@@ -12,9 +12,9 @@ SRC_URI = "git://${GO_IMPORT};protocol=git;branch=main;tag=v${PV} \
 inherit go systemd
 
 
-FILES_${PN}-dev = ""
+FILES:${PN}-dev = ""
 
-SYSTEMD_SERVICE_${PN} = "syncthing.service"
+SYSTEMD_SERVICE:${PN} = "syncthing.service"
 
 SYNCTHING_LDFLAGS = "-ldflags=' \
     -X github.com/syncthing/syncthing/lib/build.Version=v${PV} \
@@ -22,7 +22,7 @@ SYNCTHING_LDFLAGS = "-ldflags=' \
 
 # Go creates read-only files for downloaded modules. To be able to clean them,
 # make them writable explicitly
-python do_clean_prepend () {
+python do_clean:prepend () {
     import subprocess
 
     wdir = d.expand("${WORKDIR}")

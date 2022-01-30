@@ -39,11 +39,11 @@ PACKAGECONFIG[speedups] = "python3-aiodns python3-brotlipy python3-cchardet"
 
 # WARNING: the following rdepends are from setuptools install_requires. These
 # upstream names may not correspond exactly to bitbake package names.
-RDEPENDS_${PN} += "python3-async-timeout python3-attrs python3-chardet python3-multidict python3-yarl"
+RDEPENDS:${PN} += "python3-async-timeout python3-attrs python3-chardet python3-multidict python3-yarl"
 
 # WARNING: the following rdepends are determined through basic analysis of the
 # python sources, and might not be 100% accurate.
-RDEPENDS_${PN} += "python3-core python3-crypt python3-datetime python3-email python3-io python3-json python3-logging python3-math python3-mime python3-misc python3-netclient python3-netserver python3-pickle"
+RDEPENDS:${PN} += "python3-core python3-crypt python3-datetime python3-email python3-io python3-json python3-logging python3-math python3-mime python3-misc python3-netclient python3-netserver python3-pickle"
 
 # WARNING: We were unable to map the following python package/module
 # dependencies to the bitbake packages which include them:

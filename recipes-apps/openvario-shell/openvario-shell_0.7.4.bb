@@ -11,7 +11,7 @@ SRC_URI[sha256sum] = "25a8e259b74faff28f09601d09595b04006e91a72b2374ba60ca12f633
 
 inherit pypi setuptools3
 
-RDEPENDS_${PN} += " \
+RDEPENDS:${PN} += " \
     python3-core \
     python3-profile \
     python3-typing-extensions \

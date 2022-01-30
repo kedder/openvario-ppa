@@ -9,4 +9,4 @@ SRC_URI[sha256sum] = "b0b883e8e874edfdece9c28f314e3dd5badf067342e42fb162203335ae
 S = "${WORKDIR}/charset-normalizer-${PV}"
 
 inherit  pypi setuptools3
-RDEPENDS_${PN} += "python3-core"
+RDEPENDS:${PN} += "python3-core"

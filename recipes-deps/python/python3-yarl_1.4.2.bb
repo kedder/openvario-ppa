@@ -22,11 +22,11 @@ inherit pypi setuptools3
 
 # WARNING: the following rdepends are from setuptools install_requires. These
 # upstream names may not correspond exactly to bitbake package names.
-RDEPENDS_${PN} += "python3-idna python3-multidict"
+RDEPENDS:${PN} += "python3-idna python3-multidict"
 
 # WARNING: the following rdepends are determined through basic analysis of the
 # python sources, and might not be 100% accurate.
-RDEPENDS_${PN} += "python3-core"
+RDEPENDS:${PN} += "python3-core"
 
 # WARNING: We were unable to map the following python package/module
 # dependencies to the bitbake packages which include them:

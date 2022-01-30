@@ -28,11 +28,11 @@ PACKAGECONFIG[idna] = ",,,python3-idna"
 
 # WARNING: the following rdepends are from setuptools install_requires. These
 # upstream names may not correspond exactly to bitbake package names.
-RDEPENDS_${PN} += "python3-cffi"
+RDEPENDS:${PN} += "python3-cffi"
 
 # WARNING: the following rdepends are determined through basic analysis of the
 # python sources, and might not be 100% accurate.
-RDEPENDS_${PN} += "python3-core python3-io python3-math"
+RDEPENDS:${PN} += "python3-core python3-io python3-math"
 
 # WARNING: We were unable to map the following python package/module
 # dependencies to the bitbake packages which include them:

@@ -6,12 +6,12 @@ MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 RECIPE_MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 
 S = "${WORKDIR}"
-RDEPENDS_${PN} = "ovmenu-ng"
+RDEPENDS:${PN} = "ovmenu-ng"
 
 SRC_URI = "\
     file://ovmenu.patch.txt \
 "
-FILES_${PN} = " \
+FILES:${PN} = " \
     /var/lib/misc/ovmenu.patch \
 "
 
