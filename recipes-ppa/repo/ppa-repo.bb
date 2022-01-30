@@ -12,6 +12,7 @@ DEPENDS = "\
     syncthing \
     python3-pip \
     xcsoar \
+    ntp \
 "
 
 inherit nopackages

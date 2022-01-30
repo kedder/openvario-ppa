@@ -16,6 +16,7 @@ IMAGE_INSTALL += "\
     openvario-shell-autostart \
     openvario-compman \
     syncthing \
+    ntp \
     kedder-opkg-feed \
 "
 
