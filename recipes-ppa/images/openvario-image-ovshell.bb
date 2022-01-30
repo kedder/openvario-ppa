@@ -16,6 +16,7 @@ IMAGE_INSTALL += "\
     openvario-shell-autostart \
     openvario-compman \
     syncthing \
+    kedder-opkg-feed \
 "
 
 export IMAGE_BASENAME = "openvario-image-ovshell"
