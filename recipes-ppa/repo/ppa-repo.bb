@@ -34,6 +34,8 @@ python do_populate_ppa() {
     create_packages_dir(d, d.getVar("DEPLOY_DIR_PPA"), d.getVar("DEPLOY_DIR_IPK"), "package_write_ipk", True)
 }
 
+do_populate_ppa[recrdeptask] += "do_package_write_ipk"
+
 do_index_ppa[nostamp] = "1"
 do_index_ppa[depends] += "${PACKAGEINDEXDEPS}"
 python do_index_ppa() {
