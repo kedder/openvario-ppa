@@ -7,7 +7,7 @@ MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 PYPI_PACKAGE = "openvario-shell"
 PR = "r1"
 
-SRC_URI[sha256sum] = "25a8e259b74faff28f09601d09595b04006e91a72b2374ba60ca12f633ac192b"
+SRC_URI[sha256sum] = "67b424c64784105aeaaa39a095b085f32d5a7a45b724fd4863b5b81fd8d8034f"
 
 inherit pypi setuptools3
 
@@ -25,4 +25,5 @@ RDEPENDS:${PN} += " \
     python3-pyserial-asyncio \
     rsync \
     zap-console-fonts \
+    connman \
 "
