@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
 RECIPE_MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 MAINTAINER = "Andrey Lebedev <andrey.lebedev@gmail.com>"
 PYPI_PACKAGE = "openvario-shell"
-PR = "r1"
+PR = "r3"
 
 SRC_URI[sha256sum] = "d0f31de224a186038e1ebef466c7d88b89dd9501f45a5a3b8049a3e71195ede5"
 
@@ -26,4 +26,5 @@ RDEPENDS:${PN} += " \
     rsync \
     zap-console-fonts \
     connman \
+    autofs-config \
 "
