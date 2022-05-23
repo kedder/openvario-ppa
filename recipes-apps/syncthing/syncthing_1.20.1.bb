@@ -4,11 +4,11 @@ HOMEPAGE = "https://syncthing.net/"
 LICENSE = "MPL-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=f75d2927d3c1ed2414ef72048f5ad640"
 GO_IMPORT = "github.com/syncthing/syncthing"
-SRC_URI = "git://${GO_IMPORT};protocol=git;branch=main;tag=v${PV} \
+SRC_URI = "git://github.com/syncthing/syncthing;protocol=https;branch=main \
     file://0001-Remove-root-user-warning.patch;patchdir=src/${GO_IMPORT} \
     file://syncthing.service \
     "
-
+SRCREV="2145b3701d6f4f615e55e87374e13b9a12077a74"
 inherit go systemd
 
 
