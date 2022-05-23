@@ -1,6 +1,6 @@
 DESCRIPTION = "Linux Console Fonts from The ZAP Group"
 HOMEPAGE = "https://www.zap.org.au/projects/console-fonts-zap/"
-LICENSE = "GPL-3.0"
+LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://console-fonts-zap-${PV}/COPYING;md5=9f3db23d68a7af0ba451e9dbbbb8f04e"
 
 S = "${WORKDIR}"
