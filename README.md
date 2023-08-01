@@ -34,17 +34,17 @@ openvario build. Check out [OpenVario build
 instructions](https://github.com/Openvario/meta-openvario) for details on
 setting up the build environment.
 
-Start the build container (replace `$PPA_DIR` with path to ppa working directory):
+Edit the `.env` environment file and specify the path to the working dir of 
+Openvario working directory, e.g.:
+
+```
+OPENVARIO_IMAGE_DIR=../meta-openvario
+```
+
+Start the build container:
 
 ```sh
-docker run -it --rm \
-  -v $(pwd):/workdir \
-  -v $PPA_DIR:/workdir/meta-ovshell \
-  -v $PPA_DIR/conf/bblayers.override.conf:/workdir/conf/bblayers.conf \
-  --workdir=/workdir \
-  ghcr.io/openvario/ovbuild-container:main
-
-source openembedded-core/oe-init-build-env . 
+docker compose run --rm dev
 ```
 
 Build can be configured using these variables in your `local.conf`:

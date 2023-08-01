@@ -1,0 +1,9 @@
+services:
+  dev:
+    image: "ghcr.io/openvario/ovbuild-container:main"
+    working_dir: /workdir
+    volumes:
+      - $OPENVARIO_IMAGE_DIR:/workdir
+      - .:/workdir/meta-ovshell
+      - ./conf/bblayers.override.conf:/workdir/conf/bblayers.conf
+    command: /workdir/meta-ovshell/init-build.sh
