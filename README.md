@@ -34,8 +34,18 @@ openvario build. Check out [OpenVario build
 instructions](https://github.com/Openvario/meta-openvario) for details on
 setting up the build environment.
 
-Edit `conf/bblayers.conf` and add a full path to directory with `openvario-ppa`
-(this repository) sources.
+Start the build container (replace `$PPA_DIR` with path to ppa working directory):
+
+```sh
+docker run -it --rm \
+  -v $(pwd):/workdir \
+  -v $PPA_DIR:/workdir/meta-ovshell \
+  -v $PPA_DIR/conf/bblayers.override.conf:/workdir/conf/bblayers.conf \
+  --workdir=/workdir \
+  ghcr.io/openvario/ovbuild-container:main
+
+source openembedded-core/oe-init-build-env . 
+```
 
 Build can be configured using these variables in your `local.conf`:
 
@@ -54,6 +64,14 @@ packages to the public server using rsync, which can be run from the shell:
 
 ```
 $ tmp/deploy/ppa-upload.sh
+```
+
+## Building the complete image
+
+It is possible to build the complete image with all software included in this PPA. Use this command:
+
+```sh
+bitbake openvario-image-ovshell
 ```
 
 ## Adding new software to PPA
